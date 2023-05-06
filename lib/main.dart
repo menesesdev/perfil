@@ -29,62 +29,72 @@ class MyHomePage extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.blue,
       //appBar: AppBar(),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: const <Widget>[
-            //Image.asset("assets/images/bg.jpg", fit: BoxFit.contain),
-            CircleAvatar(
-              backgroundImage: AssetImage(
-                "assets/images/mat.jpeg",
+      body: Container(
+        decoration: BoxDecoration(
+            gradient: LinearGradient(
+                begin: Alignment.topRight,
+                end: Alignment.bottomLeft,
+                colors: [
+              Colors.pink.shade400,
+              Colors.blue.shade800,
+            ])),
+        child: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: const <Widget>[
+              //Image.asset("assets/images/bg.jpg", fit: BoxFit.contain),
+              CircleAvatar(
+                backgroundImage: AssetImage(
+                  "assets/images/mat.jpeg",
+                ),
+                radius: 90,
               ),
-              radius: 90,
-            ),
-            SizedBox(
-              height: 10,
-            ),
-            Text(
-              "Mateus Meneses",
-              style: TextStyle(
-                color: Colors.white,
-                fontSize: 22,
-                fontWeight: FontWeight.bold,
+              SizedBox(
+                height: 10,
               ),
-            ),
-            Text(
-              "Designer",
-              style: TextStyle(
-                color: Colors.white,
-                fontSize: 20,
-                fontWeight: FontWeight.w200,
+              Text(
+                "Mateus Meneses",
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 22,
+                  fontWeight: FontWeight.bold,
+                ),
               ),
-            ),
-            Padding(
-              padding:
-                  EdgeInsets.only(bottom: 10, left: 60, right: 60, top: 20),
-              child: Divider(
-                height: 2,
-                color: Colors.white,
+              Text(
+                "Designer",
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 20,
+                  fontWeight: FontWeight.w200,
+                ),
               ),
-            ),
-            Padding(
-              padding: EdgeInsets.only(
-                top: 10,
-                left: 50,
-                right: 50,
+              Padding(
+                padding:
+                    EdgeInsets.only(bottom: 10, left: 60, right: 60, top: 20),
+                child: Divider(
+                  height: 2,
+                  color: Colors.white,
+                ),
               ),
-              child: MyCard(),
-            ),
-            Padding(
-              padding: EdgeInsets.only(
-                top: 10,
-                left: 50,
-                right: 50,
+              Padding(
+                padding: EdgeInsets.only(
+                  top: 10,
+                  left: 50,
+                  right: 50,
+                ),
+                child: MyCard(),
               ),
-              child: MyGit(),
-            ),
-          ],
+              Padding(
+                padding: EdgeInsets.only(
+                  top: 10,
+                  left: 50,
+                  right: 50,
+                ),
+                child: MyGit(),
+              ),
+            ],
+          ),
         ),
       ),
     );
