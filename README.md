@@ -1,16 +1,6 @@
-# perfil
+# Perfil
 
-A new Flutter project.
+Um "cartão de visitas" digital feito em Dart & Flutter, usando também o package Font Awsome.
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![mediamodifier_image](https://user-images.githubusercontent.com/109961465/236606335-d7b84ebc-9193-4800-9ee9-e0a74ed10c4b.png)
